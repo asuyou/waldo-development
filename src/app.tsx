@@ -1,12 +1,14 @@
 import { Logo } from "./components/logo";
 import { Button } from "./components/button";
+import { Background } from "./components/background"
 
 export const App = () => {
   return (
-    <div class="background py-20 fill-current min-h-screen flex items-center justify-center bg-gray-900 overflow-hidden">
-      <div class="flex flex-col items-center gap-10">
+    <div class="relative py-20 px-4 min-h-screen flex items-center justify-center bg-gray-900 overflow-hidden">
+      <Background/>
+      <div class="relative flex flex-col items-center gap-10">
         <Logo class="text-white fill-current" height="12rem" />
-        <p class="text-7xl font-bold text-white">WALDO</p>
+        <p class="text-7xl tracking-wide font-bold text-white">WALDO</p>
         <h2 class="text-gray-300 text-center text-2xl md:text-xl">
           An AI powered anti cheat currently
           <br />
