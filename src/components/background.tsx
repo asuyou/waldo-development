@@ -14,10 +14,13 @@ export const Background = () => {
 
       const duration = getRandomInt(3, 6);
 
+      //@ts-ignore
       item.style.animationDelay = `${delay}s`;
+      //@ts-ignore
       item.style.animationDuration = `${duration}s`;
     });
 
+    //@ts-ignore
     function getRandomInt(min, max) {
       min = Math.ceil(min);
       max = Math.floor(max);
